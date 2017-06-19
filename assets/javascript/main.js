@@ -25,11 +25,10 @@ var latitud,longitud;
 			animation: google.maps.Animation.DROP,
 			map:map
 		});
+
+		map.setZoom(17);
+		map.setCenter({lat:latitud, lng:longitud});
 	}
-
-	map.setZoom(17);
-	map.setCenter({lat:latitud, lng:longitud});
-
 	var funcionError = function(error){
 		alert("Tenemos un problema con encontrar tu ubicación");
 	}
